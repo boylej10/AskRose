@@ -1,3 +1,4 @@
+
 (function () {
 
     function mergeObjects(obj1, obj2) {
@@ -59,6 +60,8 @@
             canvas.style.width = width + 'px';
             canvas.style.height = height + 'px';
         }
+        
+
 
         /**
          * Get the size of the canvas
@@ -120,6 +123,14 @@
         /**
          * Erase everything in the canvase
          */
+        
+        function erase() {
+        if (m) {
+            ctx.clearRect(0, 0, 5, 5);
+            document.getElementById("sketchpad").style.display = "none";
+        }
+        }
+        
         function clearCanvas () {
             context.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -384,3 +395,13 @@
         window.Sketchpad = Sketchpad;
     }
 })();
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+

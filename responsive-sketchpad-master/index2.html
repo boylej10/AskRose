@@ -53,7 +53,7 @@
     <section>
       <div class="row">
           
-          <div class="two-thirds column">
+         
           <input class="u-full-width" type="text" value="#000000" id="line-color-input">
           
         
@@ -66,26 +66,50 @@
           
         <button class="u-full-width" id="redo">Redo</button>
 
-          <button class="u-full-width" id="clear">Clear</button>
+        <button class="u-full-width" id="clear">Clear</button>
+    
+           
           
-                
+    <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:absolute;top:55%;left:15%;"> 
+          
+                   
+               
+                 </div> 
          
             
+          
+          <div class="row">
+          <div class="two-thirds column">
             <!-- sketching code -->
           <div id="sketchpad"></div>
-            
-            
-          <em>Try resizing the window!</em>
-        </div>
-          
-             <div class="one-third column">
-    <h1>sahdashdjsd </h1>
           </div>
             
+     
+
+          
+             <div class="one-third column">
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+           </div>
+            
+        </div>
+          
          
      
             
-        </div>
+      
           
   
             
